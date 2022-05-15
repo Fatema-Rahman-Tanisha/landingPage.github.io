@@ -1,0 +1,122 @@
+header {
+    background-image: url("https://freedesignfile.com/upload/2021/02/Blue-purple-gradient-background-vector.jpg");
+    /* width: 97.9vw; */
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    /* border-radius: 0 60% 145% 145%/ 10px 0 80% 80%; */
+
+}
+
+nav {
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    align-items: center;
+    /* background-color: rgb(40, 188, 139); */
+}
+.navToggleButton{display: none;}
+.logo {
+    width: 17vw;
+    height: 100%;
+    background-image: url("./img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navUl {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Mukta', cursive;
+}
+
+.navItem {
+    padding: 0 20px;
+    list-style: none;
+    font-size: large;
+}
+
+.navLinks {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.button {
+    perspective: 700px;
+}
+
+.button button {
+    padding: 15px 25px;
+    font-family: 'Mukta', cursive;
+    border-radius: 4px;
+    font-weight: 600;
+    background-color: #fb527a;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    transition: all 0.5s ease;
+    animation: buttonHover 1.5s infinite;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84%;
+    height: 100vh;
+    margin: auto;
+}
+
+.HeroImage {
+    width: 65%;
+    height: 80%;
+    background-image: url("./img/hero.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: jumping 2.5s infinite;
+}
+
+.text {
+    width: 35%;
+    font-family: 'Baloo Bhaina 2';
+}
+
+#heroTitle {
+    font-size: 70px;
+    line-height: 1.1;
+}
+
+.buttonHero {
+    perspective: 700px;
+
+}
+
+.buttonHero button {
+    width: 245px;
+    height: 65px;
+    font-family: 'Mukta', cursive;
+    font-size: large;
+    border-radius: 6px;
+    background-color: #fd4670;
+    margin: 10px 30px;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.buttonHero button:hover {
+    box-shadow:
+        1px 1px 10px white,
+        1px 1px 20px white
+        /* 1px 1px 30px #fbf8ff */
+    ;
+}

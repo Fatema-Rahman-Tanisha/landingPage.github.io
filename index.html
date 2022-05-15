@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/features.css">
+    <link rel="stylesheet" href="./css/animationMedia.css">
+</head>
+
+<body>
+    <header>
+        <div class="navToggleButton" id="navTog">
+            <div class="l1"></div>
+            <div class="l2"></div>
+            <div class="l3"></div>
+        </div>
+        <nav id="navbar">
+
+            <div class="logo"></div>
+            <ul class="navUl" id="navUl">
+                <li class="navItem"> <a href="#" class="navLinks">Home</a></li>
+                <li class="navItem"> <a href="#" class="navLinks">Features</a></li>
+                <li class="navItem"> <a href="#" class="navLinks">Testimotials</a></li>
+                <li class="navItem"> <a href="#" class="navLinks">Screens</a></li>
+            </ul>
+            <div class="button">
+                <button>Register Now</button>
+            </div>
+        </nav>
+        <hr>
+        <div class="hero">
+            <div class="text">
+                <h1 id="heroTitle">Best Mobile Brand Ever</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, in necessitatibus? Temporibus eius,
+                    consequuntur </p>
+                <div class="buttonHero">
+                    <button>Register Now</button>
+                </div>
+            </div>
+            <div class="HeroImage">
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section id="featureSection">
+            <div class="featuresHeader">
+                <h5 class="featuresH1">What We’re Offering</h5>
+                <h1 class="featuresH1">Our Feature List</h1>
+            </div>
+            <div class="featuresCarts">
+                <div class="cart">
+                    <div class="icon">
+                        <img src="http://layerdrops.com/lixero/assets/images/features-icon-1.png" alt="">
+                    </div>
+                    <div class="cart-text">
+                        <h3>Get a Free App trial</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.</p>
+                    </div>
+                    <img class="CartImage" src="http://layerdrops.com/lixero/assets/images/features-1.png" alt="">
+                </div>
+                <div class="cart">
+                    <div class="icon">
+                        <img src="http://layerdrops.com/lixero/assets/images/features-icon-2.png" alt="">
+                    </div>
+                    <div class="cart-text">
+                        <h3>Easy to Use & Update</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.</p>
+                    </div>
+              
+                    <img class="CartImage" src="http://layerdrops.com/lixero/assets/images/features-2.png" alt="">
+                </div>
+                <div class="cart">
+                    <div class="icon">
+                        <img src="http://layerdrops.com/lixero/assets/images/features-icon-3.png" alt="">
+                    </div>
+                    <div class="cart-text">
+                        <h3>Secure Payment System</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.</p>
+                    </div>
+                    <img class="CartImage" src="http://layerdrops.com/lixero/assets/images/features-3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer></footer>
+    <!-- js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+    </script>
+    <script>
+        navTog = document.getElementById('navTog')
+        navbar = document.getElementById('navbar')
+        navItem = document.getElementsByClassName('navItem')
+        navTog.addEventListener('click', () => {
+            navbar.classList.toggle('navMob')
+            // document.getElementById('navUl').classList.add('toggle')            
+            document.getElementById('navUl').classList.toggle('hidden')
+            document.getElementById('navUl').classList.toggle('navUl')
+            header = document.getElementsByTagName('header')[0]
+            header.classList.toggle("h175")
+            // if (document.getElementsByTagName('header')[0].style.height = '130vh') {
+            //     document.getElementsByTagName('header')[0].style.height = '190vh'
+            // }
+            // else if (document.getElementsByTagName('header')[0].style.height = '175vh') {
+            //     document.getElementsByTagName('header')[0].style.height = '130vh'
+            // }
+        })
+    </script>
+</body>
+
+</html>

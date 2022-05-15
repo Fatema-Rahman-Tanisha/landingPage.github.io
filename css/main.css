@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Lobster&family=Montserrat:ital,wght@1,300&family=Mukta&family=Roboto&family=Ubuntu:ital,wght@1,300&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+/* #fb527a; */
+:root {
+    --pinkTheme: #fb527a;
+  }
+::selection {
+    background-color: #fb527a;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
